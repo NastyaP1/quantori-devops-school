@@ -71,6 +71,11 @@ sudo traceroute -I <host>
 
 В колонке Loss% можно увидеть процентное соотношение потерь на определенном узле.
 
+**используемые команды**
+```
+sudo mtr <host>
+
+```
 ---
 
 **mtr до google.com**
@@ -105,4 +110,27 @@ sudo traceroute -I <host>
 ---
 
 ### 4. Утилита traceroute и протоколы IP, TCP, UDP.
+
+При использовании команда traceroute больше всего информации о хопах было получено при использовании UDP и TCP протоколов, IP протокол показал наименьший результат.
+
+---
+
+**UDP**
+
+![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw4/resources/NWpicture11.png)
+
+---
+
+**TCP**
+
+
+![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw4/resources/NWpicture12.png)
+
+---
+
+**IP**
+
+![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw4/resources/NWpicture13.png)
+
+---
 
