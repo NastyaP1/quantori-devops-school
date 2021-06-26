@@ -28,7 +28,7 @@ ICMP пакет не идет через Hub0, так как у коммутат
 ![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw2/resources/NWpicture4.png)
 
 ---
-
+ 
 **4. ICMP пакет достиг PC6**
 ![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw2/resources/NWpicture5.png)
 
