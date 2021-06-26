@@ -34,7 +34,7 @@ ICMP пакет не идет через Hub0, так как у коммутат
 
 ---
 
-**5. резудьтат симуляции**
+**5. результат симуляции**
 ![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw2/resources/NWpicture6.png)
 
 ---
