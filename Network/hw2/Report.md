@@ -22,9 +22,12 @@
 ---
 
 ICMP пакет не идет через Hub0, так как у коммутатора уже известны MAC-адреса в ходе передачи первого пакета по ARP протоколу.
-![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw2/resources/NWpicture4.png)
 
 <br>
+
+![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw2/resources/NWpicture4.png)
+
+---
 
 **4. ICMP пакет достиг PC6**
 ![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw2/resources/NWpicture5.png)
