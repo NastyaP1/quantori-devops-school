@@ -33,15 +33,11 @@ sudo traceroute -I <host>
 
 **маршрут до google.com**
 
-</br>
-
 ![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw4/resources/NWpicture1.png)
 
 ---
 
 **маршрут до yandex.ru**
-
-</br>
 
 ![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw4/resources/NWpicture2.png)
 
@@ -49,15 +45,12 @@ sudo traceroute -I <host>
 
 **маршрут до cisco.com**
 
-</br>
-
 ![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw4/resources/NWpicture3.png)
 
 ---
 
 **маршрут до aws.amazon.com**
 
-</br>
 
 ![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw4/resources/NWpicture4.png)
 
@@ -65,15 +58,51 @@ sudo traceroute -I <host>
 
 **маршрут до microsoft.com**
 
-</br>
-
 ![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw4/resources/NWpicture5.png)
 
 ---
 
 ### 2. Определение ОС
 
+
 ### 3. Использование утилиты mtr
+
+Утилита mtr совмещает в себе функциональность программа traceroute и ping. То есть эта программа показывает маршрут до указанного узла и непрерывно пингует каждые хоп и при этом собирает общую статистику потерь — на основе этих данных можно определить проблемный узел, на котором теряются пакеты.
+
+В колонке Loss% можно увидеть процентное соотношение потерь на определенном узле.
+
+---
+
+**mtr до google.com**
+
+![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw4/resources/NWpicture6.png)
+
+---
+
+**mtr до yandex.ru**
+
+![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw4/resources/NWpicture7.png)
+
+---
+
+**mtr до cisco.com**
+
+![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw4/resources/NWpicture8.png)
+
+---
+
+**mtr до aws.amazon.com**
+
+
+![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw4/resources/NWpicture9.png)
+
+---
+
+**mtr до microsoft.com**
+
+![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw4/resources/NWpicture10.png)
+
+---
 
 ### 4. Утилита traceroute и протоколы IP, TCP, UDP.
 
