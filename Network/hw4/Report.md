@@ -63,7 +63,39 @@ sudo traceroute -I <host>
 ---
 
 ### 2. Определение ОС
+Для определения ОС удаленного хоста использовалась утилита ping и значение счетчика TTL. Если TTL 254 или меньше - это UNIX-based системы, если TTl 128 и меньше, то Windows.
 
+Анализируя результаты ping команды, можно предполождить, что google.com(74.125.131.113) Windows система, у остальный серверов Unix, ping до microsoft.com не прошел.
+
+```
+Anastasias-MacBook-Pro-3:~ anastasiapereslavceva$ ping yandex.ru
+PING yandex.ru (77.88.55.77): 56 data bytes
+64 bytes from 77.88.55.77: icmp_seq=0 ttl=247 time=20.974 ms
+```
+
+```
+Anastasias-MacBook-Pro-3:~ anastasiapereslavceva$ ping google.com
+PING google.com (74.125.131.113): 56 data bytes
+64 bytes from 74.125.131.113: icmp_seq=0 ttl=110 time=28.700 ms
+```
+
+```
+Anastasias-MacBook-Pro-3:~ anastasiapereslavceva$ ping aws.amazon.com
+PING dr49lng3n1n2s.cloudfront.net (52.85.119.72): 56 data bytes
+64 bytes from 52.85.119.72: icmp_seq=0 ttl=229 time=52.890 ms
+```
+
+```
+Anastasias-MacBook-Pro-3:~ anastasiapereslavceva$ ping cisco.com
+PING cisco.com (72.163.4.185): 56 data bytes
+64 bytes from 72.163.4.185: icmp_seq=0 ttl=238 time=197.992 ms
+```
+
+```
+Anastasias-MacBook-Pro-3:~ anastasiapereslavceva$ ping microsoft.com
+PING microsoft.com (40.76.4.15): 56 data bytes
+Request timeout for icmp_seq 0
+```
 
 ### 3. Использование утилиты mtr
 
