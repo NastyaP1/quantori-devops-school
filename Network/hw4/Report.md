@@ -32,31 +32,41 @@ sudo traceroute -I <host>
 ---
 
 **маршрут до google.com**
+
 </br>
+
 ![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw4/resources/NWpicture1.png)
 
 ---
 
 **маршрут до yandex.ru**
+
 </br>
+
 ![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw4/resources/NWpicture2.png)
 
 ---
 
 **маршрут до cisco.com**
+
 </br>
+
 ![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw4/resources/NWpicture3.png)
 
 ---
 
 **маршрут до aws.amazon.com**
+
 </br>
+
 ![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw4/resources/NWpicture4.png)
 
 ---
 
 **маршрут до microsoft.com**
+
 </br>
+
 ![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw4/resources/NWpicture5.png)
 
 ---
