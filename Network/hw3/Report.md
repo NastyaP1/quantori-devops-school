@@ -16,7 +16,7 @@ LAN.C 25 хостов
 
 В рамках данного задания была построения следующая топология сети:
 
-![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw3/resources/NWpicture1.png)
+![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw3/resources/NWPicture1.png)
 
 ### 1. Разбиение сети 10.68.51.128/25 на подсети
 
@@ -60,18 +60,18 @@ Router2:
 
 Для настройки статических маршрутов использовалась конфигурация ROUTING Static на обоих роутерах, связывающая выход в локальные сети и в отличные от них.
 
-![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw3/resources/NWpicture2.png)
+![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw3/resources/NWPicture2.png)
 
-![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw3/resources/NWpicture3.png)
+![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw3/resources/NWPicture3.png)
 
 ### 4. Демонстрация
 
 С помощью команд ping и tracert была проведена проверка доступа узлов и вывод маршрута из каждой локальной сети до сети провайдера и наоборот:
 
-![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw3/resources/NWpicture4.png)
+![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw3/resources/NWPicture4.png)
 
-![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw3/resources/NWpicture5.png)
+![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw3/resources/NWPicture5.png)
 
-![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw3/resources/NWpicture6.png)
+![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw3/resources/NWPicture6.png)
 
 ![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw3/resources/NWpicture7.png)
