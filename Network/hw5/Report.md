@@ -26,7 +26,7 @@ HOST: [SERVER]
 
 **Демонстрация**
 
-![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw3/resources/NWPicture1.png)
+![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw5/resources/NWPicture1.png)
 
 ### 2. Telnet - POST запрос удаленному серверу
 ---
@@ -50,14 +50,14 @@ Content-length: [LENGTH]
 
 **Демонстрация**
 
-![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw3/resources/NWPicture2.png)
+![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw5/resources/NWPicture2.png)
 
 ### 3. Telnet - передача сообщения на почту
 ---
 
 Необходимо использовать следующий синтаксис и выполнить следующие шаги, чтобы отправить письмо на почту:
 
-1) подключиться к mail серверу через telnet
+1) подключиться к mail серверу через telnet:
 
 ```
 $ telnet <server> 25
@@ -69,19 +69,19 @@ $ telnet <server> 25
 $ HELO host
 ```
 
-3) Указать адрес отправитель
+3) Указать адрес отправитель:
 
 ```
 MAIL FROM: <address@example.com>
 ```
 
-4) Указать адрес получателя
+4) Указать адрес получателя:
 
 ```
 RCPT TO: <someone@example.com>
 ```
 
-5) Указать тему и само сообщение
+5) Указать тему и само сообщение:
 
 ```
 DATA
@@ -97,7 +97,7 @@ cheers
 
 > Для отправки сообщения необходимо на отдельной строке напечать . как указано в синтаксисе выше
 
-6) Для выхода напечатай:
+6) Для выхода:
 
 ```
 quit
@@ -107,8 +107,8 @@ quit
 
 **Демонстрация**
 
-![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw3/resources/NWPicture3.png)
+![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw5/resources/NWPicture3.png)
 
-![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw3/resources/NWPicture4.png)
+![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw5/resources/NWPicture4.png)
 
-![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw3/resources/NWPicture5.png)
+![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Network/hw5/resources/NWPicture5.png)
