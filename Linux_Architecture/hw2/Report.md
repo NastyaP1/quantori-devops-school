@@ -31,7 +31,7 @@ grep - утилита для поиска строк
 
 **Демонстрация**
 
-![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Linux Architecture/hw2/resources/LinuxArch1.png)
+![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Linux_Architecture/hw2/resources/LinuxArch1.png)
 
 ### 2 Задание
 
@@ -62,7 +62,7 @@ sed - утилита для поиска, вставки, замены и уда
 
 **Демонстрация**
 
-![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Linux Architecture/hw2/resources/LinuxArch2.png)
+![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Linux_Architecture/hw2/resources/LinuxArch2.png)
 
 ### 3 Задание
 
@@ -109,4 +109,4 @@ diff - утилита для сравнения двух указанных по
 
 **Демонстрация**
 
-![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Linux Architecture/hw2/resources/LinuxArch3.png)
+![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Linux_Architecture/hw2/resources/LinuxArch3.png)
