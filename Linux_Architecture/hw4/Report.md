@@ -42,6 +42,8 @@ sudo ./script.sh "Secret Password" "/root/password.txt"
 
 ![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Linux_Architecture/hw4/resources/LinuxArch1.png)
 
+---
+
 ![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Linux_Architecture/hw4/resources/LinuxArch2.png)
 
 ## Как правильно собрать такой pipeline с sudo?
@@ -55,6 +57,12 @@ sudo ./script.sh "Secret Password" "/root/password.txt"
 sudo sh -c "echo foo >> /root/password.txt"      <---- -с - передача команды в качестве аргумента в оболочку sh
 ```
 
+---
+
+**Демонстрация**
+
 ![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Linux_Architecture/hw4/resources/LinuxArch3.png)
+
+---
 
 ![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Linux_Architecture/hw4/resources/LinuxArch4.png)
