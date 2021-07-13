@@ -63,7 +63,7 @@ sudo chown -R alex:alex var/ftp/alex
 
 **Демонстрация восстановленных прав**
 
-![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Linux_Architecture/hw3/resources/LinuxArch6.png)
+![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Linux_Architecture/hw3/resources/LinuxArch6_.png)
 
 **Демонстрация, что alex не может больше писать в файл ivan**
 
