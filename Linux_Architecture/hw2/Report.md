@@ -77,6 +77,14 @@ diff -y /tmp/temp_passwd /tmp/temp_shells
 
 ```
 
+или передать на вход команде diff результаты двух команд в качестве аргументов:
+
+```
+
+diff -y <(cat /etc/passwd | cut -d: -f7 | sort -u | grep -v "^#" | sed '/^[[:space:]]*$/d') <(cat /etc/shells | grep -v "^#"| sed '/^[[:space:]]*$/d')
+
+```
+
 **используемые команды:**
 
 ```
@@ -110,3 +118,5 @@ diff - утилита для сравнения двух указанных по
 **Демонстрация**
 
 ![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Linux_Architecture/hw2/resources/LinuxArch3.png)
+
+![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Linux_Architecture/hw2/resources/LinuxArch4.png)
