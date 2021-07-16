@@ -6,91 +6,60 @@
 
 ## Результат
 
-Для начала создадим двух пользователей  - ivan и alex с правами обычного пользователя и отнесем их к группам ivan и alex соотвественно. А  также администратора - FTP_admin, отнесенного к группе ftp_admin и имеющего права root.
+Для начала создадим двух пользователей  - ivan и alex с правами обычного пользователя. А также администратора - FTP_admin, отнесенного к группе ftp_admin.
 
 ```
 
 sudo useradd <username>                      <----- добавление пользователя
 sudo passwd <username>                       <----- добавление пароля пользователю
 sudo usermod -aG <group> <username>          <----- добавление пользователя к группе
-sudo useradd -ou 0 -g 0 <username>           <----- создать пользователя с правами root
 
 ```
 
 ---
 
-**Демонстрация групп**
+**Демонстрация пользователя и группы**
 
 ![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Linux_Architecture/hw3/resources/LinuxArch1.png)
 
-**Демонстрация пользователей**
+---
 
-![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Linux_Architecture/hw3/resources/LinuxArch3.png)
+Для начала необходимо создать папки пользователей и дать самим пользователям корректные права, а также администраторам доступ к папкам.
 
-**Демонстрация доступа FRT_admin к папкам root**
+```
+
+chmod 2775 var/ftp
+
+sudo chown -R ivan:ftp_admin var/ftp/ivan
+sudo chown -R alex:ftp_admin var/ftp/alex
+
+```
+
+---
+
+**Демонстрация создания папок**
 
 ![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Linux_Architecture/hw3/resources/LinuxArch2.png)
 
----
+**Демонстрация восстановленных прав**
 
-В ходе некорректного обращения с данными администратор неправильно настроил права доступа к личным папкам пользователя.
-
-Также у пользователя ivan для файла /var/ftp/ivan/file.tx администратор удалил права на чтение пользователю.
+![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Linux_Architecture/hw3/resources/LinuxArch3.png)
 
 ---
 
-**Демонстрация доступа неправильных прав для личных папок**
+Зайдем под пользователем ivan и попытаемся создать в папке alex файл. Операция не будет разрешена, так как мы дали доступ others (2775) только на чтение и исполнение.
+
+Так же продемоснтрируем, что сам ivan может создавать папки и файлы в своей папке.
+
+**Демонстрация, что ivan не может писать в файл alex. alex имеет доступ к своей папке**
 
 ![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Linux_Architecture/hw3/resources/LinuxArch4.png)
 
-**Демонстрация доступа alex к файлам ivan. Отсуствие права чтения у файла**
+---
+
+Так же мы дали доступ группе ftp_admin, к которой относится наш администратор, ко всем папкам /var/ftp. ivan создал в своей папке файл cache.txt. Продемонстрируем, что ftp_admin сможет удалить этот файл.
+
+**Демонстрация, что ftp_admin может удалить пользовательские файлы**
 
 ![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Linux_Architecture/hw3/resources/LinuxArch5.png)
 
----
-
-Администратор, имеющий права root, быстро восстановил ошибки при помощи следующих комманд:
-
-```
-Смена прав доступа к личным папкам пользователей:
-
-sudo chown -R ivan:ivan var/ftp/ivan
-sudo chown -R alex:alex var/ftp/alex
-
-```
-
----
-
-**Демонстрация восстановленных прав**
-
-![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Linux_Architecture/hw3/resources/LinuxArch6_.png)
-
-**Демонстрация, что alex не может больше писать в файл ivan**
-
-![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Linux_Architecture/hw3/resources/LinuxArch7.png)
-
-Но право на чтение файла даже для ivan еще не восстановлено.
-
-**Демонстрация, что ivan все еще не может читать файл**
-
-![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Linux_Architecture/hw3/resources/LinuxArch8.png)
-
----
-
-Для восстановления прав на чтение файла пользователю FTP_admin использовал следующую команду:
-
-```
-
-sudo chmod u+r /var/ftp/ivan/file.tx
-
-```
-
----
-
-**Демонстрация изменения прав файла**
-
-![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Linux_Architecture/hw3/resources/LinuxArch9.png)
-
-**Демонстрация чтения файла**
-
-![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Linux_Architecture/hw3/resources/LinuxArch10.png)
