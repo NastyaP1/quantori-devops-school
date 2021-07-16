@@ -51,7 +51,7 @@ sudo chown -R alex:ftp_admin var/ftp/alex
 
 Так же продемоснтрируем, что сам ivan может создавать папки и файлы в своей папке.
 
-**Демонстрация, что ivan не может писать в файл alex. alex имеет доступ к своей папке**
+**Демонстрация, что ivan не может писать в файл alex. ivan имеет доступ к своей папке**
 
 ![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Linux_Architecture/hw3/resources/LinuxArch4.png)
 
