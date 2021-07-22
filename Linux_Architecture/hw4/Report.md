@@ -63,6 +63,5 @@ sudo sh -c "echo foo >> /root/password.txt"      <---- -с - передача к
 
 ![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Linux_Architecture/hw4/resources/LinuxArch3.png)
 
----
 
 ![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Linux_Architecture/hw4/resources/LinuxArch4.png)
