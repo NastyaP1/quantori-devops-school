@@ -7,7 +7,7 @@
 
 ## Результат
 
-Код скрипта для добавления новых пользователей: ![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Linux_Administration/hw4/scripts/script.sh)
+Код скрипта для добавления новых пользователей: ![script](https://github.com/NastyaP1/quantori-devops-school/blob/master/Linux_Administration/hw4/scripts/script.sh)
 
 **Демонстрация**
 
