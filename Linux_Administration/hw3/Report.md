@@ -6,7 +6,7 @@
 
 ==========================================================================================
 
-Бинарный файл находится здесь: [bin file](https://github.com/NastyaP1/quantori-devops-school/blob/master/Linux_Administration/hw2/files/file.fs.gpg)
+Бинарный файл находится здесь: [file](https://github.com/NastyaP1/quantori-devops-school/blob/master/Linux_Administration/hw2/files/file.fs.gpg)
 
 Пароль: ananas
 
