@@ -6,7 +6,8 @@
 
 ==========================================================================================
 
-Бинарный файл находится здесь: [script](https://github.com/NastyaP1/quantori-devops-school/blob/master/Linux_Administration/hw2/files/file.fs.gpg)
+Бинарный файл находится здесь: [bin file](https://github.com/NastyaP1/quantori-devops-school/blob/master/Linux_Administration/hw2/files/file.fs.gpg)
+
 Пароль: ananas
 
 ==========================================================================================
@@ -21,7 +22,6 @@ dd if=/dev/zero of=file.fs bs=1M count=1
 
 ```
 mkfs.ext2 -F file.fs
-
 ```
 
 Смонтируем файловую систему:
@@ -46,14 +46,17 @@ sudo umount /mnt/disk
 
 ```
 gpg -c file.fs
+
+// введем пароль ananas
 ```
 
 Для проверки расшифруем бинарный файл file.fs.gpg, снова смонтируем в систему и прочитаем текстовый файл:
 
 ```
 gpg file.fs.gpg
+// введем пароль ananas
 
-sudo mount -t ext4 -o loop file.fs /mnt/disk
+sudo mount -t ext2 -o loop file.fs /mnt/disk
 
 cat /mnt/disk/message.txt
 ```
