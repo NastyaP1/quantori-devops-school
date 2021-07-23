@@ -96,7 +96,7 @@ hddsize = 40GB
 
 ![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Linux_Administration/hw2/resources/LinuxAdm2.png)
 
-* Добавим их в массив raid5, а loop устройство оставим запасным:
+* Добавим их в массив raid5, а loop устройство /dev/loop3 оставим запасным:
 
 ![](https://github.com/NastyaP1/quantori-devops-school/blob/master/Linux_Administration/hw2/resources/LinuxAdm3.png)
 
