@@ -66,7 +66,7 @@ then
         /usr/sbin/useradd -d "$HOME_DIR/$USER_ACCOUNT" "$USER_ACCOUNT"
         PASSWD=$(pwgen 10 1)
         echo "$USER_ACCOUNT:$PASSWD" | chpasswd
-        echo "$USER_ACCOUNT $pass" >> "$LOGFILE"
+        echo "$USER_ACCOUNT $PASSWD" >> "$LOGFILE"
         echo "The user $USER_ACCOUNT has been created and has the password: $PASSWD"
         mkdir $FTP_DIR/$USER_ACCOUNT
         echo "Directory $FTP_DIR/$USER_ACCOUNT has been created" >> "$LOGFILE"
