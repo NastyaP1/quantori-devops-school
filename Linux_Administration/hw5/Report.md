@@ -7,7 +7,7 @@
 
 ### Реализация init script
 
-Для управления сервисом были созданы filesharing(init), start.sh, stop.sh, status.sh скрипты, которые можно найти здесь: [script](https://github.com/NastyaP1/quantori-devops-school/blob/master/Linux_Administration/hw5/scripts)
+Для управления сервисом были созданы filesharing(init), start.sh, stop.sh, status.sh скрипты, которые можно найти здесь: [scripts](https://github.com/NastyaP1/quantori-devops-school/blob/master/Linux_Administration/hw5/scripts)
 
 Листинг /etc/init.d/filesharing:
 
@@ -87,7 +87,7 @@ wget http://0.0.0.0:8080/opt/share/file
 
 ### Реализация service script
 
-Для управления сервисом были созданы filesharing.service, start_service.sh скрипты, которые можно найти здесь: [script](https://github.com/NastyaP1/quantori-devops-school/blob/master/Linux_Administration/hw5/scripts)
+Для управления сервисом были созданы filesharing.service, start_service.sh скрипты, которые можно найти здесь: [scripts](https://github.com/NastyaP1/quantori-devops-school/blob/master/Linux_Administration/hw5/scripts)
 
 Листинг /etc/systemd/system/filesharing.service:
 
