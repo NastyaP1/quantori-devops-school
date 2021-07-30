@@ -1,0 +1,45 @@
+#!/bin/bash
+
+export PORT=8080
+
+stop() {
+	echo -n "Shutting down python http service"
+ 	echo
+    source /filesharing/bin/stop.sh
+}
+status() {
+	echo -n "Status of the python http service:"
+    echo
+	source /filesharing/bin/status.sh
+}
+restart() {
+	echo -n "Restarting python http service"
+	echo
+    source /filesharing/bin/stop.sh
+
+	source /filesharing/bin/start.sh $PORT
+}
+start() {
+    echo -n "Starting python http service"
+    echo
+    source /filesharing/bin/start.sh $PORT
+}
+
+case "$1" in
+	start)
+	    start
+	;;
+	stop)
+        stop
+	;;
+	status)
+		status
+	;;
+	restart)
+		restart
+	;;
+	*)
+		echo "Usage: python http service {start|stop|status|restart}"
+		exit 1
+	;;
+esac

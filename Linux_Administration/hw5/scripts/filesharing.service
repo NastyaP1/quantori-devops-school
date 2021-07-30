@@ -1,0 +1,13 @@
+[Unit]
+Description=Python http filesharing service
+After=network.target
+
+[Service]
+Environment=HTTP_PORT=8080
+User=vagrant
+Group=vagrant
+
+ExecStart=/filesharing/bin/start_service.sh
+
+[Install]
+WantedBy=multi-user.target
