@@ -30,13 +30,13 @@ case "$1" in
 	    start
 	;;
 	stop)
-        stop
+            stop
 	;;
 	status)
-		status
+	    status
 	;;
 	restart)
-		restart
+	    restart
 	;;
 	*)
 		echo "Usage: python http service {start|stop|status|restart}"
