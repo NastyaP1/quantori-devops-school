@@ -121,13 +121,13 @@ Dig команда дает много информации в выводе: у�
 ```
 ;; ANSWER SECTION:
 yandex.ru.		133	  IN	AAAA	2a02:6b8:a::a
-yandex.ru.		263	  IN	A	    77.88.55.55
-yandex.ru.		263	  IN	A	    77.88.55.50
-yandex.ru.		263	  IN	A	    5.255.255.5
-yandex.ru.		263	  IN	A	    5.255.255.50
-yandex.ru.		5751	  IN	NS	    ns1.yandex.ru.
-yandex.ru.		5751	  IN	NS	    ns2.yandex.ru.
-yandex.ru.		5751	  IN  NS      ns9.z5h64q92x9.net.
+yandex.ru.		263	  IN	A	77.88.55.55
+yandex.ru.		263	  IN	A	77.88.55.50
+yandex.ru.		263	  IN	A	5.255.255.5
+yandex.ru.		263	  IN	A	5.255.255.50
+yandex.ru.		5751	  IN	NS	ns1.yandex.ru.
+yandex.ru.		5751	  IN	NS	ns2.yandex.ru.
+yandex.ru.		5751	  IN	NS	ns9.z5h64q92x9.net.
 
 ```
 
