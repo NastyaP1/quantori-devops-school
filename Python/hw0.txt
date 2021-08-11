@@ -5,6 +5,6 @@
 # ###############################################################################
 #
 #
-[Ссылка на текущий гит] https://github.com/NastyaP1/quantori-devops-school
+Ссылка на текущий гит: https://github.com/NastyaP1/quantori-devops-school
 
 > В качестве IDE была выбрана PyCharm CE
