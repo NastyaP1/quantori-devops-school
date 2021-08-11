@@ -1,0 +1,10 @@
+# Homework 0
+#
+# https://github.com/CsteerDevops1/lectures_devops2/blob/main/Python/Homework/hw0.txt
+#
+# ###############################################################################
+#
+#
+[Ссылка на текущий гит] https://github.com/NastyaP1/quantori-devops-school
+
+> В качестве IDE была выбрана PyCharm CE

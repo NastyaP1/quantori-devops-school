@@ -4,7 +4,9 @@
 #
 # ###############################################################################
 #
-if __name__ == '__main__':
+
+
+def count_words():
     list_of_words = input("Enter the list items : ")
     word_count = {}
     for x in list_of_words.lower().split():
@@ -19,3 +21,11 @@ if __name__ == '__main__':
     for item, amount in word_count.items():
         if amount == n:
             print("{} - {}".format(amount, item))
+
+    print("==========================================")
+
+    count_words()
+
+
+if __name__ == '__main__':
+    count_words()
