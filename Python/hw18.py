@@ -28,7 +28,7 @@ def main(argv):
         elif opt in ("-p", "--percent"):
             percent = arg
     if input_file == '' or percent == 0:
-        print('Not all mandatory settings are set')
+        print('Not all mandatory settings are set. You can take a photo of frog from resources/frog.jpg')
         sys.exit(2)
     else:
         resize_image(input_image_path=input_file,
