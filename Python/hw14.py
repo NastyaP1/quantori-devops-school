@@ -60,14 +60,5 @@ def dump_emp(emp, file):
     f.close()
 
 
-def load_emp(file):
-    with open(file, 'rb') as f:
-        data = pickle.load(f)
-    f.close()
-    return data
-
-
 emp1 = Employee("Mary", "Network Department", 2000)
 dump_emp(emp1, 'file.pickle')
-emp2 = load_emp('file.pickle')
-print(emp2)
