@@ -65,11 +65,9 @@ def search_uids_per_group(group_dict, users_dict):
 
 
 if __name__ == '__main__':
-    shells = count_shells("resources/passwd")
-    groups = set_groups("resources/group")
-    users = set_users("resources/passwd")
+    shells = count_shells("../resources/passwd")
+    groups = set_groups("../resources/group")
+    users = set_users("../resources/passwd")
 
-    print(print_dict_as_text(count_shells("resources/passwd")))
-
-    write_to_file('output.txt', print_dict_as_text(count_shells("resources/passwd")))
+    write_to_file('output.txt', print_dict_as_text(count_shells("../resources/passwd")))
     write_to_file('output.txt', search_uids_per_group(groups, users))
