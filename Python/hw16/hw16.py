@@ -21,8 +21,8 @@ def get_lat_lng(apiKey, lat, lng):
 
 
 if __name__ == '__main__':
-    f_name = 'resources/GoogleMapsAPIKey.txt'
-    f_coordinates_name = 'resources/GPS_coordinates.txt'
+    f_name = '../resources/GoogleMapsAPIKey.txt'
+    f_coordinates_name = '../resources/GPS_coordinates.txt'
     coordinates = []
 
     file = open(f_name, 'r')
