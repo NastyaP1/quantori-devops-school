@@ -20,6 +20,12 @@ def get_lat_lng(apiKey, lat, lng):
     return address
 
 
+def convert_time_to_gps(time):
+    time = time.replace("'", "")
+    res = float(time.split(',')[0]) + float(time.split(',')[1]) / 60
+    return res
+
+
 if __name__ == '__main__':
     f_name = '../resources/GoogleMapsAPIKey.txt'
     f_coordinates_name = '../resources/GPS_coordinates.txt'
@@ -31,7 +37,7 @@ if __name__ == '__main__':
 
     file = open(f_coordinates_name, 'r')
     for line in file.readlines():
-        coordinates.append({"lat": line.rstrip().split(',')[0], "lng": line.rstrip().split(',')[1]})
+        coordinates.append({"lat": convert_time_to_gps(line.rstrip().split(';')[0]), "lng": convert_time_to_gps(line.rstrip().split(';')[1])})
     file.close()
 
     for item in coordinates:
