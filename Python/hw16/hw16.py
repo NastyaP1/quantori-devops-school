@@ -26,18 +26,17 @@ def convert_time_to_gps(time):
     return res
 
 
-if __name__ == '__main__':
-    f_name = '../resources/GoogleMapsAPIKey.txt'
-    f_coordinates_name = '../resources/GPS_coordinates.txt'
+def get_google_place(file_path, key_file):
     coordinates = []
 
-    file = open(f_name, 'r')
+    file = open(key_file, 'r')
     apiKey = file.read()
     file.close()
 
-    file = open(f_coordinates_name, 'r')
+    file = open(file_path, 'r')
     for line in file.readlines():
-        coordinates.append({"lat": convert_time_to_gps(line.rstrip().split(';')[0]), "lng": convert_time_to_gps(line.rstrip().split(';')[1])})
+        coordinates.append({"lat": convert_time_to_gps(line.rstrip().split(';')[0]),
+                            "lng": convert_time_to_gps(line.rstrip().split(';')[1])})
     file.close()
 
     for item in coordinates:
@@ -45,3 +44,9 @@ if __name__ == '__main__':
         print("==========================================")
         print('Location: {}'.format(address))
         print('Goggle Maps URL: https://www.google.com/maps/search/?api=1&query={},{}'.format(item['lat'], item['lng']))
+
+
+if __name__ == '__main__':
+    f_name = '../resources/GoogleMapsAPIKey.txt'
+    f_coordinates_name = '../resources/GPS_coordinates.txt'
+    get_google_place(f_coordinates_name, f_name)
