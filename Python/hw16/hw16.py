@@ -26,12 +26,8 @@ def convert_time_to_gps(time):
     return res
 
 
-def get_google_place(file_path, key_file):
+def get_google_place(file_path):
     coordinates = []
-
-    file = open(key_file, 'r')
-    apiKey = file.read()
-    file.close()
 
     file = open(file_path, 'r')
     for line in file.readlines():
@@ -39,6 +35,13 @@ def get_google_place(file_path, key_file):
                             "lng": convert_time_to_gps(line.rstrip().split(';')[1])})
     file.close()
 
+    return coordinates
+
+
+def print_context(coordinates, key_file):
+    file = open(key_file, 'r')
+    apiKey = file.read()
+    file.close()
     for item in coordinates:
         address = get_lat_lng(apiKey, item['lat'], item['lng'])
         print("==========================================")
@@ -47,6 +50,7 @@ def get_google_place(file_path, key_file):
 
 
 if __name__ == '__main__':
-    f_name = '../resources/GoogleMapsAPIKey.txt'
+    key_file_path = '../resources/GoogleMapsAPIKey.txt'
     f_coordinates_name = '../resources/GPS_coordinates.txt'
-    get_google_place(f_coordinates_name, f_name)
+    coords = get_google_place(f_coordinates_name)
+    print_context(coords, key_file_path)
