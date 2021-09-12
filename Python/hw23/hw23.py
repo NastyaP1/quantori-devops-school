@@ -5,18 +5,26 @@
 # ###############################################################################
 
 
-def gen_n_dimensional_array(size):
+from copy import deepcopy
+
+
+def gen_n_dimensional_array(array):
     try:
-        for var in size:
+        for var in array:
             assert isinstance(var, int)
     except AssertionError:
         return "Input an integer!"
-    array = ""
-    for var in size:
-        array = [array] * var
-    return array
+
+    n = len(array)
+    last_el = array[-1]
+    array.remove(array[-1])
+    if n < 2:
+        return [""] * last_el
+    else:
+        interim_arr = gen_n_dimensional_array(array)
+        return [deepcopy(interim_arr) for i in range(last_el)]
 
 
-if __name__ == '__main__':
-    print(gen_n_dimensional_array([2, 2]))
-    print(gen_n_dimensional_array([2, 2, 2]))
+ar = (gen_n_dimensional_array([2, 3, 3]))
+ar[0][2][1] = 'x'
+print(ar)
