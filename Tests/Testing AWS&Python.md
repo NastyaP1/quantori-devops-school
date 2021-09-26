@@ -1,10 +1,3 @@
-Для входа в AWS под пользователем с парвами доступа read-only:
-
-Username: read_only_person
-
-Password: Devopstest010
-
-ID: 466616955433
 
 region - US East (Ohio)us-east-2
 
